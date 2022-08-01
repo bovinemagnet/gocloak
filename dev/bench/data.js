@@ -1,6 +1,6 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1616415682718,
-  "repoUrl": "https://github.com/Nerzal/gocloak",
+  "lastUpdate": 1659314482649,
+  "repoUrl": "https://github.com/bovinemagnet/gocloak",
   "entries": {
     "Benchmark": [
       {
@@ -2781,6 +2781,54 @@ window.BENCHMARK_DATA = {
             "value": 58754202,
             "unit": "ns/op\t   51932 B/op\t     218 allocs/op",
             "extra": "19 times\n2 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "vovakirishi@gmail.com",
+            "name": "Vladimir",
+            "username": "VladimirStepanov"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1c89abf61f250a344b37bd27fb79c64363892a3e",
+          "message": "feat: add supporing ecdsa algorithm (#356)\n\n* feat: add supporing es256 algorithm\r\n\r\n* feat: add supporing es256 algorithm in method DecodeAccessTokenCustomClaims\r\n\r\n* fix: rename method\r\n\r\n* fix: fix an algorithm detecting bug\r\n\r\n* refactor: remove code duplicates\r\n\r\n* fix: remove useless println\r\n\r\n* refactor: remove code duplicates\r\n\r\n* test: add tests\r\n\r\n* refactor: add comments\r\n\r\n* refactor: refactor of decodeECDSAPublicKey func\r\n\r\nCo-authored-by: Vladimir Stepanov <v.stepanov@redmadrobot.com>",
+          "timestamp": "2022-06-27T15:50:24+02:00",
+          "tree_id": "ce8334963734a3b433042a5884415876cfa4095f",
+          "url": "https://github.com/bovinemagnet/gocloak/commit/1c89abf61f250a344b37bd27fb79c64363892a3e"
+        },
+        "date": 1659314481877,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkLogin",
+            "value": 88658768,
+            "unit": "ns/op\t   77776 B/op\t     225 allocs/op",
+            "extra": "12 times"
+          },
+          {
+            "name": "BenchmarkLogin",
+            "value": 87400911,
+            "unit": "ns/op\t   60347 B/op\t     222 allocs/op",
+            "extra": "13 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkLoginParallel",
+            "value": 93116330,
+            "unit": "ns/op\t   74396 B/op\t     222 allocs/op",
+            "extra": "13 times"
+          },
+          {
+            "name": "BenchmarkLoginParallel",
+            "value": 67333751,
+            "unit": "ns/op\t   65985 B/op\t     223 allocs/op",
+            "extra": "21 times\n2 procs"
           }
         ]
       }
